@@ -4,36 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/index.css">
   <title>Document</title>
 </head>
 
 <body>
-  <header>
-    <h1>Регистрация</h1>
-    <p>Уже есть аккаунт?<a href="#">Войти</a></p>
-  </header>
-  <main>
-    <form action="#" method="get">
-      <div>
-        <input type="text" name="company" required>
-      </div>
-      <div>
-        <input type="text" name="name" placeholder="Имя" required>
-        <input type="text" name="surname" placeholder="Фамилия" required>
-      </div>
-      <div>
-        <input type="email" name="email" placeholder="E-mail" required>
-      </div>
-      <button>
-        Зарегистрироваться &#8594;
-      </button>
-      <div>
-        <input type="checkbox" name="check" id="check">
-        <label for="check">Я прочитал и принимаю <a href="#">Условия использования</a></label>
-      </div>
-
-    </form>
+  <main class="main">
+    <section class="coteiner">
+      <h1 class="coteiner__title">Регистрация</h1>
+      <p class="coteiner__subtitle">Уже есть аккаунт?<a href="#">Войти</a></p>
+      <form action="#" method="get" class="form">
+        <div>
+          <input class="input form__inputCompany" type="text" name="company" required>
+        </div>
+        <div>
+          <input class="input form__inputName" type="text" name="name" placeholder="Имя" required>
+          <input class="input form__inputSurname" type="text" name="surname" placeholder="Фамилия" required>
+        </div>
+        <div>
+          <input class="input form__inputEmail" type="email" name="email" placeholder="E-mail" required>
+        </div>
+        <button class="form__btn">
+          Зарегистрироваться <span>&#8594;</span>
+        </button>
+        <div>
+          <input class="form__inputCheck" type="checkbox" name="check" id="check">
+          <label class="form__label" for="check">Я прочитал и принимаю <a href="#">Условия использования</a></label>
+        </div>
+      </form>
+    </section>
   </main>
+
+  </ь>
 
 </body>
 
