@@ -8,6 +8,7 @@ main {
     rgba(242, 152, 222, 0)
   );
   min-height: 1024px;
+  box-sizing: border-box;
 }
 .conteiner {
   box-sizing: border-box;
@@ -20,7 +21,6 @@ main {
   width: 100%;
   max-width: 582px;
 
-  
   background: rgba(255, 254, 254, 1);
 }
 .conteiner__title {
@@ -40,6 +40,7 @@ main {
   margin-left: 6px;
 }
 .input {
+  box-sizing: border-box;
   height: 44px;
   border: 1px solid rgba(245, 245, 245, 1);
   margin-bottom: 22px;
@@ -48,16 +49,18 @@ main {
 }
 .form__inputCompany,
 .form__inputEmail {
-  width: 394px;
+ max-width: 394px;
+ width: 100%;
 }
 .form__inputName,
 .form__inputSurname {
-  width: 192px;
+  width: calc(390px / 2);
 }
 .form__btn {
   position: relative;
   height: 44px;
-  width: 394px;
+  max-width: 394px;
+  width: 100%;
   border: 3px solid rgba(255, 255, 255, 1);
   background-color: rgba(8, 159, 224, 1);
   color: rgba(255, 255, 255, 1);
