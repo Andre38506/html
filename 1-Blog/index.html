@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/index.css">
+  <title>Блог</title>
 </head>
 
-<body>
-  <header>
-
-    <a href="#">
-      <img src="./images/logo.jpg" alt="logotip">
-      P
-    </a>
-
-    <nav>
-      <ul>
+<body class="wrapper">
+  <header class="header">
+    <a href="#"> B </a>
+    <nav class="header__nav">
+      <ul class="header__list">
         <li>
-          <a href="#">Мой блог</a>
+          <a class="activ" href="#">Мой блог</a>
         </li>
         <li>
           <a href="#">HTML и CSS</a>
@@ -31,7 +30,10 @@
         </li>
       </ul>
     </nav>
-    <input type="text" placeholder='Поиск'>
+    <div class="input-wrapper">
+      <img src="./images/search.svg" alt="изображение поиска">
+      <input class="header__input" type="text" placeholder='Поиск'>
+    </div>
   </header>
   <main>
     <section class="title">
@@ -42,12 +44,14 @@
       </div>
       <h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
       <div class="card">
-        <img src="./images/Ellipse.jpg" alt="foto">
-        <h2>Наталья Васильева</h2>
-        <p>Разработчик</p>
+        <img src="./images/Ellipse.png" alt="foto">
+        <div class="wrapper-text">
+          <h2>Наталья Васильева</h2>
+          <p>Разработчик</p>
+        </div>
       </div>
     </section>
-    <section class="imag">
+    <section class="image">
       <img src="./images/oboy.jpg" alt="redfoto">
     </section>
     <section class="text">
@@ -70,7 +74,7 @@
       </p>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <a href="#">Все права защищены (c) 2024</a>
   </footer>
 </body>
