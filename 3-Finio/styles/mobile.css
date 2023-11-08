@@ -1,0 +1,39 @@
+.mobile{
+  padding-top: 80px;
+  padding-bottom: 120px;
+  color: var(--text3-color);
+}
+.mobile__title{
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.mobile__subtitle{
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  margin: 0;
+  color: var(--text4-color);
+  margin-bottom: 40px;
+}
+.mobile__img{
+  display: block;
+  max-width: 1128px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .mobile__title {
+    font-size: 36px;
+    text-align: start;
+  }
+  .mobile{
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+}
