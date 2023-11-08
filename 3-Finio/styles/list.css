@@ -1,0 +1,49 @@
+.list {
+  gap: 64px;
+  display: flex;
+  color: var(--text3-color);
+  align-items: center;
+  padding-top: 273px;
+  flex-wrap: wrap;
+}
+
+.list__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 408px;
+  width: 100%;
+}
+
+.list__img {
+  width: 64px;
+  height: 64px;
+}
+
+.list__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .list {
+    gap: 32px;
+    padding-top: 176px;
+   justify-content: center;
+  }
+  .list__item {
+    max-width: 300px;
+  }
+  .list__img {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+  }
+  .list__title {
+    font-size: 18px;
+    margin: 0;
+    Line-height:25.2px;
+
+  }
+}

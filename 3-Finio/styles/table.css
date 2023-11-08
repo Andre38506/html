@@ -1,0 +1,139 @@
+.table {
+  background-color: var(--second-color);
+  padding-top: 120px;
+}
+
+.table__title {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  line-height: 57.6px;
+}
+
+.table__subtitle {
+  max-width: 1156px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: var(--text2-color);
+  margin-top: 30px;
+}
+
+.table__button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  color: var(--second-color);
+}
+
+.table__wrapper-img {
+  max-width: 1156px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  margin-top: 64px;
+}
+
+.table__richt {
+  height: auto;
+  max-width: 640px;
+  object-fit: cover;
+  display: block;
+
+  z-index: 1;
+}
+.table__left {
+  height: auto;
+  max-width: 640px;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.table__line {
+  z-index: 24;
+  position: absolute;
+  right: 44%;
+  top: 0;
+  height: auto;
+}
+
+.table__footer {
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+
+.table__exel-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 64px;
+  margin-bottom: 24px;
+}
+.table__item {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.table__item-title {
+  margin: 0;
+}
+
+@media (max-width: 1400px) {
+  .table__wrapper-img {
+    max-width: 700px;
+  }
+  .table__left {
+    max-width: 350px;
+  }
+  .table__richt {
+    max-width: 350px;
+  }
+  .table__title {
+    font-size: 36px;
+    
+  }.table__subtitle{
+    font-size: 18px;
+  }
+  .table__button{
+    font-size: 17px;
+    
+  }
+  .table__footer {
+ justify-content: center;
+  }
+  .table__line{
+    height: 375px;
+  }
+
+}
+@media (max-width: 750px){
+  .table__wrapper-img {
+    max-width: 328px;
+  }
+  .table__left {
+    max-width: 164px;
+  }
+  .table__richt {
+    max-width: 164px;
+  }
+  .table__line{
+    height: 182px;
+  }
+  .table{
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .table__footer{
+    padding-bottom: 0;
+  }
+}
